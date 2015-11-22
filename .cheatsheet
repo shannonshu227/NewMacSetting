@@ -1,0 +1,8 @@
+ssh-keygen -t rsa
+ssh-keygen -t dsa
+
+cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
+cat ~/.ssh/id_dsa.pub >> ~/.ssh/authorized_keys
+chmod 711 ~/.ssh
+chmod 644 ~/.ssh/authorized_keys
+
